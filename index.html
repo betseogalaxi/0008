@@ -7,6 +7,8 @@
   <meta name="keywords" content="bahis siteleri, güvenilir bahis siteleri, bahis com, forum bahis, nakit bahis, mobil bahis, bahis casino, hızlı bahis, lisanslı bahis siteleri, deneme bonusu veren bahis siteleri, nakit bahis giriş">
   <title>Bet30Casino — BetPuan Güncel Giriş 🎰 Kazanmanın En Hızlı Yolu</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="canonical" href="https://bet30casino.top" />
+  
 </head>
 <body class="bg-[#293043] text-white font-sans">
 
@@ -67,16 +69,35 @@
     🔗 Ayrıca resmi BetPuan erişim adresleri:
   </p>
 
-  <p class="text-md mt-1">
-    <a href="https://betpuan.co" class="underline hover:text-yellow-300 transition">betpuan.co</a> •
-    <a href="https://betpuanmobil.com" class="underline hover:text-yellow-300 transition">betpuanmobil.com</a> •
-    <a href="https://betpuanuyelik.com" class="underline hover:text-yellow-300 transition">betpuanuyelik.com</a> •
-    <a href="https://girisbetpuan.com" class="underline hover:text-yellow-300 transition">girisbetpuan.com</a> •
-    <a href="https://puanbetgiris.com" class="underline hover:text-yellow-300 transition">puanbetgiris.com</a> ✅
-  </p>
-</section>
+<p class="text-md mt-1" id="betpuan-links">
+  <!-- Links will be inserted here by JavaScript -->
+</p>
 
+<script>
+  const links = [
+    { href: "https://betpuan.co", text: "betpuan.co" },
+    { href: "https://betpuanguncelgiris.com", text: "betpuanguncelgiris.com" },
+    { href: "https://betpuanmobil.com", text: "betpuanmobil.com" },
+    { href: "https://betpuanuyelik.com", text: "betpuanuyelik.com" },
+    { href: "https://bonusbetpuan.com", text: "bonusbetpuan.com" },
+    { href: "https://girisbetpuan.com", text: "girisbetpuan.com" },
+    { href: "https://puanbetgiris.com", text: "puanbetgiris.com" }
+  ];
 
+  function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  const container = document.getElementById('betpuan-links');
+  const shuffled = shuffle([...links]); // copy and shuffle
+  container.innerHTML = shuffled.map(link =>
+    `<a href="${link.href}" class="underline hover:text-yellow-300 transition" target="_blank" rel="dofollow">${link.text}</a>`
+  ).join(' • ');
+</script>
 
 
   <!-- Footer Section -->
